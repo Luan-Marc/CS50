@@ -1,0 +1,20 @@
+  {
+    "version": "0.2.0",
+    "configurations": [
+
+      {
+        "name": "Debug CS50",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/hello",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "preLaunchTask": "Build with CS50"
+      }
+    ],
+  }
+  

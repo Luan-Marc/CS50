@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: In the worst scenario, it presented a lower ordering capacity than the third algorithm, especially in large lists, but in ordered lists it presented better results.
+
+sort2 uses: merge sort
+
+How do you know?: In both scenarios it presented the best result in terms of speed in the sort.
+
+sort3 uses: selection sort
+
+How do you know?: In the worst scenario, it presented a better screening capacity, but in an already ordered scenario, it presented a lower speed inthe resolution capacity.

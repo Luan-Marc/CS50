@@ -1,0 +1,111 @@
+ .navbar-expand-lg .navbar-collapse {
+            justify-content: center;
+        }
+
+.presentation {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #D9BFC6;
+            
+}
+
+
+.navbar {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000000;
+    margin-bottom: 20px;
+}
+
+body {
+
+    background-color: #0D0D0D;
+}
+
+.back{
+    background-color: rgba(242,177,153,0.01)
+}
+.terminal {
+    
+    background-color: rgba(12, 12, 12, 0.05);
+    padding: 10px;
+}
+
+#cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.text-format {
+    font-size: medium;
+    text-align: left;
+}
+
+ .hr {
+        width: 100%;
+        border-top: 1px solid #D9BFC6;; /* Define a cor da borda e a espessura da linha */
+        margin: 1px 0; /* Define o espaçamento vertical */
+    }
+
+.projects {
+            text-align: center;
+        }
+        
+.gallery-item {
+            margin: 3px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s ease-in-out;
+        }
+
+        @media (min-width: 768px) {
+         .gallery-item:hover {
+            transform: scale(1.10); /* Aumenta a escala em 5% no hover */
+        }
+    }
+        
+        .gallery-text {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.1s ease-in-out; /* Efeito de transição para a opacidade */
+            background-color: rgba(12, 12, 12, 0.8);
+            color: #D9BFC6;
+            padding: 1px;
+            font-size: smaller;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 5px;
+        }
+        
+         @media (min-width: 768px) {
+        .gallery-item:hover .gallery-text {
+            opacity: 1;         }
+        }
+
+.img-fluid {
+            max-width: 100%; /* Define a largura máxima como 100% */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block;
+        }
+     
+labelclass {
+    text-align: left; /* Centraliza à esquerda */
+    color: blue; /* Muda a cor para azul */
+}
+
+.radius {
+    border-radius: 50%;
+    margin-top: 30px; /* Define uma margem superior de 20 pixels */
+    margin-bottom: 20px; /* Define uma margem inferior de 20 pixels */
+}

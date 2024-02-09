@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia! </title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded' ,function() {  
+                document.querySelector('form').addEventListener('submit', function(event) {
+                    let answers = document.querySelector('#answ').value;
+                    if (answers == 5)
+                    {
+                        document.querySelector('#free_answ').innerHTML = "Correct!";
+                    }
+                    else
+                    {
+                        document.querySelector('#free_answ').innerHTML = "Incorrect";
+                    }
+                    event.preventDefault();
+                });
+            });
+            document.addEventListener('DOMContentLoaded' ,function() {
+                let tabela = document.querySelector('table');
+                const botoes = document.querySelectorAll('.btn');
+                for (let i = 0; i < botoes.length; i++)
+                {
+                    let botao = botoes[i]
+                    botao.addEventListener('click', function(event){
+                        let answers = botao.innerHTML;
+                        if (answers == 5)
+                        {
+                            botao.style.background = 'green';
+                            document.querySelector('#mult_answ').innerHTML = "Correct!";
+                        }
+
+                        else 
+                        {   
+                            botao.style.background = 'red';
+                            document.querySelector('#mult_answ').innerHTML = "Incorrect";
+                        }
+                        event.preventDefault();
+                    }); 
+                }       
+            }); 
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3> Quantos gatos eu tenho? </h3>
+                <table>
+                    <tr><button class="btn" id = "bt1"> 1 </button></tr>
+                    <tr><button class="btn" id = "bt2"> 3 </button></tr>
+                    <tr><button class= "btn" id = "bt3"> 5 </button></tr>
+                </table>
+                <p id = "mult_answ"> Resposta </p>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Quantos gatos eu tenho?</h3>
+                <form>
+                    <input id = "answ" autocomplete="off" placeholder="Answer" type="text">
+                    <button type="submit">Submit</button>
+                </form>
+                <p id = "free_answ"> Resposta </p>
+            </div>
+        </div>
+    </body>
+</html>

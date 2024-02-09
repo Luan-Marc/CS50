@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug CS50 Speller",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/speller",
+      "args": ["dictionaries/small", "texts/cat.txt"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb" // Use "gdb" em vez de "lldb" se estiver no Linux.
+    }
+  ]
+}
+
