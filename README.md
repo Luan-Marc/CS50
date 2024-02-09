@@ -1,2 +1,2 @@
 # CS50
-Repositorio destinado as minhas resoluções no curso CS50 - 2023
+Repositorio destinado as resoluções do curso CS50 - 2023
